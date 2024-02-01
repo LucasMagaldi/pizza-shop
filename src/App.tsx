@@ -1,14 +1,10 @@
-import { useState } from 'react'
+import { RouterProvider } from 'react-router-dom'
+
 import './globals.css'
+import { router } from './router'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
-    <div className='flex justify-center'>
-      app
-    </div>
+    <RouterProvider router={router}/>
   )
 }
-
-export default App
