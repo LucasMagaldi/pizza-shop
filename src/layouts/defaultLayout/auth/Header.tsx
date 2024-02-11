@@ -13,7 +13,7 @@ export function HeaderAuth () {
                     Developed By Lucas S. Magaldi; - Pizza.shop {new Date().getFullYear()}
                 </footer>
             </div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex relative flex-col items-center justify-center">
                 <Outlet />
             </div>
             

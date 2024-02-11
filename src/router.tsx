@@ -3,6 +3,7 @@ import { Dashboard } from "./pages/app/Dashboard"
 import { HeaderApp } from "./layouts/defaultLayout/app/Header"
 import { HeaderAuth } from "./layouts/defaultLayout/auth/Header"
 import { SignIn } from "./pages/auth/signIn"
+import { SignUp } from "./pages/auth/signUp"
 
 
 export const router = createBrowserRouter([
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path: '/sign-in',
                 element: <SignIn /> 
+            },
+            {
+                path: '/sign-up',
+                element: <SignUp />
             }
         ]
     }
