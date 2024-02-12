@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 import { Dashboard } from "./pages/app/Dashboard"
-import { HeaderApp } from "./layouts/defaultLayout/app/Header"
+import { AppLayout } from "./layouts/defaultLayout/app/appLayout"
 import { HeaderAuth } from "./layouts/defaultLayout/auth/Header"
 import { SignIn } from "./pages/auth/signIn"
 import { SignUp } from "./pages/auth/signUp"
@@ -9,7 +9,7 @@ import { SignUp } from "./pages/auth/signUp"
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <HeaderApp />,
+        element: <AppLayout />,
         children: [
             {
                 path: '/dashboard',
